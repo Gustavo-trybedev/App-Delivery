@@ -7,10 +7,9 @@ const SButton = styled.button`
   ${tw`
     justify-center
     flex
-    m-1.5
+    ml-1
     font-bold
     text-white
-    p-1
   `}
 
   align-items: center;

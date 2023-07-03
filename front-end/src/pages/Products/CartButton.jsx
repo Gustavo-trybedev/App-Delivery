@@ -6,19 +6,29 @@ import Button from '../../components/Button';
 
 const Fixed = styled(Button)`
   @media only screen and (min-width: 360px) and (max-width: 480px) {
-    size-adjust: inherit;
+    /* size-adjust: inherit; */
     position: sticky;
     bottom: 0.5rem;
     top: 0;
     height: 1.5rem;
-    width: 11rem;
+    width: auto;
     font-size: 0.9rem;
-    font-weight: bold;
     border-radius: 25px;
-    padding: 3px 0 0 0;
+    padding: 0.7rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
     border-color: #036B52;
     background-color:#036B52;
     color: white;
+    box-shadow: 0.3rem 0.3rem 0.7rem #333333;
+
+    span {
+      color: #fff;
+      font-weight: bold;
+      font-size: 12px;
+    }
   }
 `;
 
@@ -37,11 +47,10 @@ function CartButton() {
       datatestId="customer_products__button-cart"
       name={
         <>
-          Ver Carrinho: R$
           <span
             data-testid="customer_products__checkout-bottom-value"
           >
-            { String(totalPrice.toFixed(2)).replace('.', ',') }
+            {`Ver carrinho: R$${totalPrice.toFixed(2).replace('.', ',')}` }
           </span>
         </>
       }

@@ -21,12 +21,13 @@ const QuantityContainer = styled.div`
     border-color: #433f5a;
     background-color: #433f5a;
     color: #fff;
-    &:active {
-      transition: 0.2s;
-      transform: scale(1.1);
-      border-color: rgb(255, 197, 0);
+    border-radius: 10px;
+    &:focus {
+      outline: none;
       color: rgb(255, 197, 0);
-    }
+      border: 1px solid rgb(255, 197, 0);
+      box-shadow: 0 0 5px rgb(255, 197, 0);
+  }
   }
 
   input {

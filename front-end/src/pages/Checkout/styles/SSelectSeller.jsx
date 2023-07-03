@@ -7,13 +7,17 @@ const SelectSeller = styled(Select)`
     width: 100%;
     height: 25px;
     border-radius: 5px;
-    border: 1px solid #FF6442;
     background-color: #fff;
     color: black;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
-  }
 
+    &:focus {
+      outline: none;
+      border: 1px solid #FF6442;
+      box-shadow: 0 0 5px #FF6442;
+  }
+  }
 }
 `;
 

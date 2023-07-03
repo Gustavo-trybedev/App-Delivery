@@ -16,7 +16,7 @@ const RightContainer = styled.div`
     width: 1.4rem;
     font-size: 14px;
     border-radius: 5px;
-    margin: 1px;
+    margin: 0.2rem;
     background-color: #de3131;
   }
 

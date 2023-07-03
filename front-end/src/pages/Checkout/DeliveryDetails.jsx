@@ -18,7 +18,7 @@ const FieldsContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     margin-top: 0;
-}
+  }
 `;
 
 const SubmitButton = styled(Button)`
@@ -29,6 +29,7 @@ const SubmitButton = styled(Button)`
     border-radius: 22px;
     border-color: #FF6442;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     &:hover {
       color: white;
       transform: scale(1.05);
